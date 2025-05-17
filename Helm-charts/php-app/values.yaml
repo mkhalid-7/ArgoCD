@@ -1,0 +1,10 @@
+phpApp:
+  name: php-app-deployment
+  image: mkhalid77/php-app:latest
+  replicas: 1
+  namespace: app-demo-2
+
+mysql:
+  image: mysql:8.0
+  storage: 3Gi
+  storageClass: ebs-sc
